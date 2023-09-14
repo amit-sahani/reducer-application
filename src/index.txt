@@ -1,0 +1,24 @@
+React life Cycle 
+// the journey that react component follows from the beginning of it's mounting phase till it gets destroyed from the screen.
+// React Lifecycle is divided into 3 phases 
+//1. mounting 
+//2. updating
+//3. unmounting
+// mounting=> constructor, render, componentDidMount
+// updating=> shouldComponentUpdate, render, componentDidUpdate
+// unmounting=> componentWillUnmount
+
+// what we do in componentWillUnmount
+
+// Can we implement life cycle methods in functional component.
+// didmount, didupdate and willunmount 
+// didmount => useEffect with empty dependency array 
+// didupdate => useEffect with no dependency array 
+// willunmount => by returning a function from the callback 
+
+
+// parent component => two primitive states and one function => pass one state and one function which will not change, child component
+
+// PureComponent is an optimized version React Component which by default implements the shouldComponentUpdate
+
+//React.memo(): it is a higher order component which takes a component and returns a optimized version of that component which whill not always renders when it's parent re-render.

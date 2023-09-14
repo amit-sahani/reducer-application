@@ -7,10 +7,10 @@
 // disptach: It is a method to modify the state. It will take the action object
 // useState => [state, setState]
 
-import React, { useReducer, useState } from 'react'
+import React, { useReducer, useState, memo } from 'react'
 import { initialValue, reducer } from '../Reducer'
 
-const Counter = () => {
+const Counter = memo(() => {
     const [counter, dispatch] = useReducer(reducer, initialValue)
     const [inp, setInp] = useState('')
   return (<div>
@@ -21,6 +21,6 @@ const Counter = () => {
     <button onClick={()=>{dispatch({type:'decrement'})}}>Decrement</button>
     </div>
   )
-}
+})
 
 export default Counter
