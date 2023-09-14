@@ -7,7 +7,7 @@ function App() {
   const [name, setName] = useState('amit')
   return (
     <div className="App">
-      Name: {process.env.REACT_APP_MYNAME}
+      Name: {process.env.REACT_APP_NAME}
       <Counter/>
       <CounterClass name={name}/>
     </div>
