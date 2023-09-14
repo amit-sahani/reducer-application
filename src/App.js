@@ -4,7 +4,7 @@ import CounterClass from './component/ClassCounter';
 import Counter from './component/Counter';
 
 function App() {
-  const [name, setName] = useState('amit')
+  const [name,] = useState('amit')
   return (
     <div className="App">
       Name: {process.env.REACT_APP_NAME}

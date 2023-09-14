@@ -1,4 +1,4 @@
-import {Component, PureComponent} from "react";
+import { PureComponent} from "react";
 
 class CounterClass extends PureComponent {
     constructor(){
