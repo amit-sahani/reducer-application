@@ -6,6 +6,7 @@ function App() {
   return (
     <div className="App">
       <Counter/>
+      Name:{process.env.REACT_APP_NAME}
       <CounterClass/>
     </div>
   );
